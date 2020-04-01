@@ -1,0 +1,14 @@
+[package]
+name = "python-rust-example"
+version = "0.1.0"
+authors = ["Lewis Gaul <lewis.gaul@gmail.com>"]
+
+[lib]
+name = "example"         # Name of the library
+crate-type = ["cdylib"]  # Indicating we're making a C dynamic library
+
+[dependencies]
+# (runtime dependencies would go here)
+
+[build-dependencies]
+bindgen = "0.53.2"       # We will be using this in build.rs
